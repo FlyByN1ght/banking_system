@@ -1,5 +1,7 @@
 package model;
 
+import exception.EmptyDirectoryException;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Map;
@@ -33,8 +35,7 @@ public class FileParse {
         File[] files = inputDirectory.listFiles();
 
         if (files == null || files.length == 0) {
-            System.out.println("В каталоге 'input' нет файлов для обработки.");
-            return;
+            throw new EmptyDirectoryException("Каталог 'input' пуст или произошла ошибка при получении списка файлов.");
         }
 
         for (File file : files) {
