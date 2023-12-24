@@ -10,7 +10,8 @@ public class Main {
             System.out.println("1. Парсинг файлов");
             System.out.println("2. Вывод истории переводов");
             System.out.println("3. Вывод всех счетов");
-            System.out.println("4. Выход");
+            System.out.println("4. Вывод транзакций по датам и времени");
+            System.out.println("5. Выход");
             System.out.print("Выберите действие:");
             int choice = new Scanner(System.in).nextInt();
 
@@ -18,7 +19,8 @@ public class Main {
                 case 1 -> fileParse.readAndProcessFiles();
                 case 2 -> FileRead.showTransaction();
                 case 3 -> FileRead.showAccounts();
-                case 4 -> System.exit(0);
+                case 4 -> FileRead.showTransactionsByDateRange();
+                case 5 -> System.exit(0);
                 default -> System.out.println("Некорректный выбор. Попробуйте снова.");
             }
         }
