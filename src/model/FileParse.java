@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class FileParse {
     private static final String INPUT_DIRECTORY = "C:\\Users\\Daniil\\IdeaProjects\\banking_system\\src\\Input";
     private static final String ARCHIVE_DIRECTORY = "C:\\Users\\Daniil\\IdeaProjects\\banking_system\\src\\Archive";
-    private final Map<String, Integer> ACCOUNTS;
+    private final Map<String, Double> ACCOUNTS;
 
     /**
      * Конструктор класса, инициализирует переменную ACCOUNTS данными из файла аккаунтов.
@@ -60,7 +60,7 @@ public class FileParse {
                 if (fields.length == 3) {
                     String senderAccount = fields[0].trim();
                     String receiverAccount = fields[1].trim();
-                    int transferAmount = Integer.parseInt(fields[2].trim());
+                    double transferAmount = Double.parseDouble(fields[2].trim());
 
                     boolean success = performTransfer(senderAccount, receiverAccount, transferAmount, ACCOUNTS);
 
@@ -86,14 +86,14 @@ public class FileParse {
      * @param accounts         Map с данными аккаунтов
      * @return true, если транзакция успешна, иначе false
      */
-    private boolean performTransfer(String senderAccount, String receiverAccount, int transferAmount, Map<String, Integer> accounts) {
+    private boolean performTransfer(String senderAccount, String receiverAccount, double transferAmount, Map<String, Double> accounts) {
         String failureReason = getFailureReason(senderAccount, receiverAccount, transferAmount, accounts);
 
         if (failureReason != null) {
             return false;
         }
 
-        int senderBalance = accounts.get(senderAccount);
+        double senderBalance = accounts.get(senderAccount);
 
         accounts.put(senderAccount, senderBalance - transferAmount);
         accounts.put(receiverAccount, accounts.get(receiverAccount) + transferAmount);
@@ -111,7 +111,7 @@ public class FileParse {
      * @param accounts         Map с данными аккаунтов
      * @return Строка с причиной неудачной транзакции или null, если транзакция успешна
      */
-    private String getFailureReason(String senderAccount, String receiverAccount, int transferAmount, Map<String, Integer> accounts) {
+    private String getFailureReason(String senderAccount, String receiverAccount, Double transferAmount, Map<String, Double> accounts) {
         if (!accounts.containsKey(senderAccount)) {
             return "отсутствует счет отправителя";
         }

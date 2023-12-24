@@ -22,8 +22,8 @@ public class AccountReader {
      *
      * @return Map, где ключ - номер счета, значение - баланс
      */
-    public static Map<String, Integer> readAccounts() {
-        Map<String, Integer> accounts = new HashMap<>();
+    public static Map<String, Double> readAccounts() {
+        Map<String, Double> accounts = new HashMap<>();
 
         try (Scanner scanner = new Scanner(new File(ACCOUNTS_FILE))) {
             while (scanner.hasNextLine()) {
@@ -33,7 +33,7 @@ public class AccountReader {
                 if (fields.length == 2) {
                     String accountNumber = fields[0];
                     int balance = Integer.parseInt(fields[1]);
-                    accounts.put(accountNumber, balance);
+                    accounts.put(accountNumber, (double)balance);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -47,9 +47,9 @@ public class AccountReader {
      *
      * @param accounts Map с аккаунтами для записи в файл
      */
-    public static void updateAccountsFile(Map<String, Integer> accounts) {
+    public static void updateAccountsFile(Map<String, Double> accounts) {
         try (FileWriter writer = new FileWriter(AccountReader.ACCOUNTS_FILE)) {
-            for (Map.Entry<String, Integer> entry : accounts.entrySet()) {
+            for (Map.Entry<String, Double> entry : accounts.entrySet()) {
                 writer.write(entry.getKey() + ":" + entry.getValue() + "\n");
             }
         } catch (IOException e) {

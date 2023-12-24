@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d98b09a0-1afb-4ac1-a4a2-baa0362cc188" name="Changes" comment="Added class FileRead">
-      <change afterPath="$PROJECT_DIR$/src/exception/EmptyDirectoryException.java" afterDir="false" />
+    <list default="true" id="d98b09a0-1afb-4ac1-a4a2-baa0362cc188" name="Changes" comment="Add method showTransactionsByDateRange,readDateFromConsole,isDateInRange">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Archive/f3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/f4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/AccountReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/AccountReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/FileParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/FileParse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReportFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ReportFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/report.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -25,30 +24,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectId" id="2Zr932Cj5qgmSQBaZSyWj96S7WY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Daniil/JIja/lombok-1.18.30.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniil\IdeaProjects\banking_system\src\Input" />
-      <recent name="C:\Users\Daniil\IdeaProjects\banking_system\src\Archive" />
-      <recent name="C:\Users\Daniil\IdeaProjects\banking_system\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,42 +50,14 @@
       <option name="presentableId" value="Default" />
       <updated>1703169129830</updated>
     </task>
-    <task id="LOCAL-00001" summary="Create program">
-      <created>1703169263229</created>
+    <task id="LOCAL-00001" summary="Add method showTransactionsByDateRange,readDateFromConsole,isDateInRange">
+      <created>1703461514720</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1703169263229</updated>
+      <updated>1703461514720</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added method AccountReader">
-      <created>1703170147732</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1703170147732</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added method updateAccountsFile">
-      <created>1703421025040</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1703421025055</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added class FileParse, ReportFileHandler">
-      <created>1703421530162</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1703421530162</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added class FileRead">
-      <created>1703422881971</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1703422881971</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,18 +65,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create program" />
-    <MESSAGE value="Added method AccountReader" />
-    <MESSAGE value="Added method updateAccountsFile" />
-    <MESSAGE value="Added class FileParse, ReportFileHandler" />
-    <MESSAGE value="Added class FileRead" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class FileRead" />
+    <MESSAGE value="Add method showTransactionsByDateRange,readDateFromConsole,isDateInRange" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method showTransactionsByDateRange,readDateFromConsole,isDateInRange" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package model;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ReportFileHandler {
@@ -17,7 +18,7 @@ public class ReportFileHandler {
      * @param success       Успешность транзакции.
      * @param failureReason Причина ошибки, если транзакция не успешна.
      */
-    public static void logTransaction(String fileName, String senderAccount, String receiverAccount, int transferAmount, boolean success, String failureReason) {
+    public static void logTransaction(String fileName, String senderAccount, String receiverAccount, double transferAmount, boolean success, String failureReason) {
         String status;
         if (success) {
             status = "успешно обработан";
@@ -27,7 +28,7 @@ public class ReportFileHandler {
                 status += ": " + failureReason;
             }
         }
-        String transactionDetails = String.format("перевод с %s на %s %d | %s",
+        String transactionDetails = String.format("перевод с %s на %s %.2f | %s",
                 senderAccount, receiverAccount, transferAmount, status);
 
         try {
@@ -47,7 +48,8 @@ public class ReportFileHandler {
      */
     private static void updateReportFile(String fileName, String status, String details) throws IOException {
         try (FileWriter writer = new FileWriter(REPORT_FILE, true)) {
-            String timestamp = String.valueOf(new Date());
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String timestamp = dateFormat.format(new Date());
             writer.write(timestamp + " | " + fileName + " | " + details + "\n");
         }
     }
