@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d98b09a0-1afb-4ac1-a4a2-baa0362cc188" name="Changes" comment="Added class FileParse, ReportFileHandler">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok_1_18_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/FileRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/banking_system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/AccountReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/AccountReader.java" afterDir="false" />
+    <list default="true" id="d98b09a0-1afb-4ac1-a4a2-baa0362cc188" name="Changes" comment="Added class FileRead">
+      <change afterPath="$PROJECT_DIR$/src/exception/EmptyDirectoryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/FileParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/FileParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Daniil/JIja/lombok-1.18.30.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
@@ -94,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703421530162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added class FileRead">
+      <created>1703422881971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703422881971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +114,7 @@
     <MESSAGE value="Added method AccountReader" />
     <MESSAGE value="Added method updateAccountsFile" />
     <MESSAGE value="Added class FileParse, ReportFileHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class FileParse, ReportFileHandler" />
+    <MESSAGE value="Added class FileRead" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added class FileRead" />
   </component>
 </project>
