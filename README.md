@@ -34,7 +34,7 @@ Java 8 or higher
 # **Launch**
 1. Clone the repository: git clone (https://github.com/FlyByN1ght/banking_system)
 2. Go to the 'banking_system/src' directory
-3. Run the program: javac model/FileParse.java && java model.FileParse
+3. Run the program: javac model/Main.java
 
 # **Сlass diagram**
 ![image](https://github.com/FlyByN1ght/banking_system/assets/90777434/1ed56589-0469-4fd7-a632-052a9db700fe)
